@@ -20,6 +20,7 @@ local charset = {}  do -- [0-9a-zA-Z]
     for c = 97, 122 do table.insert(charset, string.char(c)) end
 end
 
+
 function randomString(length)
     if not length or length <= 0 then return '' end
     math.randomseed(os.clock()^5)
