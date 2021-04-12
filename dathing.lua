@@ -15,9 +15,9 @@ end
 characters = "他是说汉语的ｱ尺乇你他是说汉语的ｱ尺乇你他是说汉语的ｱ尺乇你abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789123456789123456789123456789123456789123456789ᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠαβγδεζηθικλμνξοπρστυφχψωαβγδεζηθικλμνξοπρστυφχψωαβγδε"
 
 local charset = {}  do -- [0-9a-zA-Z]
-    for c = 48, 57  do table.insert(charset, string.char(c)) end
-    for c = 65, 90  do table.insert(charset, string.char(c)) end
-    for c = 97, 122 do table.insert(charset, string.char(c)) end
+    for c = math.random(1,52), math.random(52,122)  do table.insert(charset, string.char(c)) end
+    for c = math.random(1,52), math.random(52,122)  do table.insert(charset, string.char(c)) end
+    for c = math.random(1,52), math.random(52,122) do table.insert(charset, string.char(c)) end
 end
 
 
